@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Trivia Game</title>
+
+		<!-- Linking CSS Files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+	<body>
+
+		<!-- Start of the game -->
+		<div id=start_container>
+			<!-- Static Game Logo -->
+			<h1 class="logo">NBA Trivia</h1>
+
+			<button id=start_button>Start</button>
+		</div>
+
+
+		<!-- During Gameplay Container -->
+		<div id=mid_game_container>
+			<!-- Static Game Logo -->
+			<h1 class="logo">NBA Trivia</h1>
+
+			<!-- Game Timer -->
+			<h1 id="timer_line">Time Remaining: <span id="timer_number">30 Seconds</span></h1>
+
+			<!-- Game Questions -->
+
+			<h1>1. Who won the most NBA Finals MVP's?</h1>
+			<!-- Michael Jordan -->
+				<input type="radio" name="q1" value="Kobe Bryant">Kobe Bryant
+				<input type="radio" name="q1" value="Michael Jordan">Michael Jordan
+				<input type="radio" name="q1" value="LeBron James">Lebron James 
+				<input type="radio" name="q1" value="Larry Bird">Larry Bird
+				
+
+			<h1>2. What player has the most career assists?</h1>
+			<!-- John Stockton -->
+				<input type="radio" name="q2" value="Magic Johnson">Magic Johnson
+				<input type="radio" name="q2" value="John Stockton">John Stockton
+				<input type="radio" name="q2" value="Mark Jackson">Mark Jackson 
+				<input type="radio" name="q2" value="Chris Paul">Chris Paul
+
+
+			<h1>3. What player scored the most points in one game?</h1>
+			<!-- Wilt Chamberlain -->
+				<input type="radio" name="q3" value="Michael Jordan">Michael Jordan
+				<input type="radio" name="q3" value="James Harden">James Harden
+				<input type="radio" name="q3" value="Kobe Bryant">Kobe Bryant
+				<input type="radio" name="q3" value="Wilt Chamberlain">Wilt Chamberlain
+
+
+			<h1>4. What team has the best record in one season?</h1>
+			<!-- GSW -->
+				<input type="radio" name="q4" value="Golden State Warriors">Golden State Warriors 
+				<input type="radio" name="q4" value="Los Angeles Lakers">Los Angeles Lakers 
+				<input type="radio" name="q4" value="Chicago Bulls">Chicago Bulls
+				<input type="radio" name="q4" value="New York Knicks">New York Knicks 
+				
+
+			<h1>5. What player has the highest career 3-pt FG percentage?</h1>
+			<!-- Steve Kerr  -->
+				<input type="radio" name="q5" value="Stephen Curry">Stephen Curry
+				<input type="radio" name="q5" value="Steve Kerr">Steve Kerr 
+				<input type="radio" name="q5" value="Ray Allen">Ray Allen
+                <input type="radio" name="q5" value="Kyle Korver">Kyle Korver
+                
+            
+            <br>
+
+            <button id=done_button>Done!</button>
+    
+         </div>
+			
+
+
+		<!-- End of the game -->
+		<div id=end_container>
+			<!-- Static Game Logo -->
+			<h1 class="logo">NBA Trivia</h1>
+
+			<h1 id="done">All Done!</h1>
+			<br>
+
+			<h1>Correct Answers: <span id ="correct_answers">0</span></h1>
+			<h1>Incorrect Answers: <span id =wrong_answers>0</span></h1>
+			<h1>Unanswered: <span id ="unanswered">0</span></h1>
+		</div>
+			
+
+
+
+		<!-- Link in jQuery -->
+		<script src="assets/javascript/jquery-3.1.1.min.js"></script>
+
+		<!-- Link in JavaScript -->
+		<script src="assets/javascript/app.js"></script>
+		
+	</body>
+</html>
