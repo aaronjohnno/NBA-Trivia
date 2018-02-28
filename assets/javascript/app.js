@@ -1,10 +1,6 @@
-// Page timer is set to 30 seconds
-//var limit = 30*1000;
 
-
-// Countdown also starts at 30 seconds (same at the limit of the page timer)
+// Countdown page timer starts at 30 seconds
 var count = 30;
-
 
 // Count of Right, Wrong, and unanswered Qustions
 var correctCount = 0;
@@ -12,26 +8,19 @@ var wrongCount = 0;
 var unansweredCount = 0;
 
 
-
-// ------------------------ Game Functions are below ------------------------
+// ------------------------ Game Functions ------------------------
 $(document).ready(function(){
 
 	// TimeOut page after 30 secons
-	//setTimeout(timeUp, limit); <--- worked around it with a hack (count = 0 manaul set)
-
-
 
 	// Intialize the game with hidden Divs
 	$("#mid_game_container").hide();
 	$("#end_container").hide();
 
-
-
 	$("#start_button").on("click", function(){
 
 		// Hide the start Div from the user
 		$("#start_container").hide();
-
 
 		// Show the Game Div
 		$("#mid_game_container").show();
@@ -42,11 +31,10 @@ $(document).ready(function(){
 	});
 
 
-
 	// Counts down and displays the time to the user
 	function countdown(){
 
-		// Decrement the counter, down from 30 seconds
+		// Counts down from 30 seconds
 		count--;
 
 		// Display the count to the user in the DOM
@@ -54,13 +42,13 @@ $(document).ready(function(){
 
     	
 
-    	// ----------- Handle Cases for Time as 0 Seconds -----------
+    	// ----------- If Time reaches 0 Seconds -----------
 			// User finishes before time is up and clicks done
 			$("#done_button").on("click", function(){
 
 			// Stop the countdown and run the timeUp function
 			//clearInterval(startCountdown);
-			count = 0; // <---- Needed a hack since I couldn't get the clearInterval function to work... It's been a long week :/
+			count = 0; 
 			return;
 
 			});
@@ -156,8 +144,6 @@ $(document).ready(function(){
 		else{
 			wrongCount++;
 		}
-
-
 
 
 		// After answers are validated, display the score results
