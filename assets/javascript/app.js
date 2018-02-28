@@ -8,7 +8,7 @@ var wrongCount = 0;
 var unansweredCount = 0;
 
 
-// ------------------------ Game Functions ------------------------
+// ---- Game Functions ----
 $(document).ready(function(){
 
 	// TimeOut page after 30 secons
@@ -42,7 +42,7 @@ $(document).ready(function(){
 
     	
 
-    	// ----------- If Time reaches 0 Seconds -----------
+    	// ----- If Time reaches 0 Seconds ----
 			// User finishes before time is up and clicks done
 			$("#done_button").on("click", function(){
 
