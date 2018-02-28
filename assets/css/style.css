@@ -1,0 +1,34 @@
+#start_container {
+    background-color: beige;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#mid_game_container {
+    background-color: beige;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#end_container {
+    background-color: beige;
+    text-align: center;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+#start_button {
+    padding: 10px;
+    margin: 20px;
+}
+
+#done_button {
+    padding: 10px;
+    margin: 20px;
+}
+
+.logo {
+    padding-top: 30px;
+}
